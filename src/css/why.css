@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=LXGW+WenKai+TC&family=Noto+Sans:ital,wght@0,361;1,361&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rhodium+Libre&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:wght@700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.why-container{
+    margin: 2vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-color: aqua; */
+}
+.why-head{
+
+    text-align: center;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+.why-head-txt{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 6vh;
+}
+
+
+.why-head-txt-quot{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    margin-top: 3vh;
+    font-size: 4vh;
+}
+.why-content-card{
+    background-color: rgb(56, 56, 56);
+    padding: 3vh;
+    border-radius: 4vh;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.content-sub-card{
+    background-color: rgba(110, 110, 110, 0.546);
+    padding: 3vh;
+    border-radius: 4vh;
+    text-align: left;
+    margin-top: 3vh;
+    color: white;
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.card-head-txt{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 3.6vh;
+}
+
+.sub-content-extra-quot{
+    margin: 3vh;
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.play-btn{
+    height: 22vh;
+    width: 15vw;
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) { 
+
+.why-content-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4vh;
+}
+.why-content-card{
+    margin: 2vh;
+}
+.card-head-txt{
+    font-size: 5vh;
+}
+.sub-content-extra-quot{
+    font-size: 4vh;
+}
+.why-head-txt{
+    font-size: 7vh;
+}
+}

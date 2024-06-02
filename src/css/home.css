@@ -1,0 +1,174 @@
+.h-main-head{
+    margin-top: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.h-main-head-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    padding: 3vh;
+}
+
+.h-main-sub-txt{
+    margin-top: 10px;
+    font-size: 3.2vw;
+    font-family: "Roboto", sans-serif;
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeIn 2s ease forwards; 
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start with opacity 0 */
+      transform: translateY(20px); /* Start with slight translateY */
+    }
+    100% {
+      opacity: 1; /* End with opacity 1 */
+      transform: translateY(0); /* End with no translateY */
+    }
+  }
+
+.h-main-head-txt{
+    font-size: 9vw;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.handshake{
+    height: 50vh;
+    width: 100vw;
+}
+.tt{
+    color: black;
+}
+.t{
+    
+}
+
+.sml-btn{
+    padding: 2vh;
+    border-radius: 3vh;
+    background-color: rgb(236, 158, 119);
+    color: white;
+    font-weight: 500;
+}
+
+.business-image {
+    height: 50vh;
+    max-width: 100%;
+}
+.handshake, .business-image {
+    animation: shake 1s infinite alternate;
+}
+.h-main-head-txt, .h-main-sub-txt {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.tt {
+    opacity: 1;
+}
+
+.t {
+    transform: translateY(0);
+}
+
+@keyframes shake {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+.h-main-head-txt, .h-main-sub-txt {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.h-main-head-txt.tt, .h-main-sub-txt.t {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .handshake {
+        display: block; /* Ensure the initial image is displayed */
+    }
+
+    .business-image {
+        display: none; /* Hide the new image on smaller screens */
+    }
+
+    .handshake{
+        margin-top: -10vh;
+    }
+    .h-main-head-txt{
+        font-size: 7vw;
+    }
+    .h-main-sub-txt{
+        font-size: 3vw;
+        padding: 5vw;
+    }
+
+    .sml-btn{
+        font-size: 2vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+
+    .h-main-head-cont{
+        margin-top: -10vh;
+        padding: 1vw;
+        width: 50vw;
+    }
+    .h-main-sub-txt{
+        font-size: 1.3vw;
+        padding: 1vw;
+        width: auto;
+    }
+    .h-main-head-txt{
+        font-size: 2.5vw;
+    }
+
+    .main-flx{
+        display: flex;
+        margin-top: 0vh;
+        padding: 2vw;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2vw;
+    }
+    .handshake {
+        display: none; /* Hide the initial image on larger screens */
+    }
+    .tt{
+        font-size: 2.8vw;
+    }
+    .business-image {
+        display: block; /* Ensure the new image is displayed */
+        height: 80vh;
+        width: 120vw;
+        padding-right: 30px;
+        margin-top: -3vh;
+        /* margin-right: 15vw; */
+    }
+    .sml-btn{
+        font-weight: 800;
+        margin-top: 5vh;
+        padding: 2vh;
+    }
+}

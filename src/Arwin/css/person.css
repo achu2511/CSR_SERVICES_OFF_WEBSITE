@@ -1,0 +1,85 @@
+.person-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .tot-container {
+    margin: 20px auto;
+    width: fit-content;
+    overflow-x: hidden;
+    padding: 30px 0;
+    border: 5px black;
+    border-radius: 40px;
+    box-shadow: 0px 10px 20px gray;
+    
+
+
+    /* text-align: center;
+    width: 94%;
+    margin: 10px;
+    margin-left: 3%;
+    padding: 15px 0;
+    border-radius: 20px; */
+  }
+  .p_card {
+    background: white;
+    /* width: 25rem; */
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    margin: 7vh;
+    border-radius: 30px;
+    box-shadow: 0px 15px 0px #DA916D,
+                0px 3px 30px rgba(0, 0, 0, 0.25),
+                0px 3px 30px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.t_card
+{
+  width: 27rem;
+  animation: shake 1s infinite alternate;
+}
+
+
+.p2_card {
+  background: #DA916D;
+  justify-content: center;
+  align-items: center;
+  /* width: 25rem; */
+  height: 30rem;
+  margin:7vh;
+  border-radius: 30px;
+  box-shadow: 0px 15px 0px white,
+              0px 3px 30px rgba(0, 0, 0, 0.25),
+              0px 3px 30px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+
+
+
+@media (max-width: 970px) { 
+  .t_card
+  {
+    width: 98vw;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+  }
+    .p_card
+    {
+      height: fit-content;
+    }
+    .p2_card
+    {
+      height: fit-content;
+    }
+    .person-container {
+      display: grid;
+      /* grid-gap: 10px; */
+    }
+}
+
