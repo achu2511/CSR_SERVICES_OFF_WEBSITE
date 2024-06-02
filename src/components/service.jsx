@@ -5,7 +5,7 @@ import deal from '../images/deal_11352526.png'
 import three from '../images/magnifying-glass.png'
 import four from '../images/briefcase.png'
 import five from '../images/shuttle.png'
-
+import seven from '../images/Line 10.svg'
 import six from '../images/dotwarrow.png'
 const Service = () => {
   return (
@@ -13,7 +13,7 @@ const Service = () => {
         <div className='ser-cont'>
             <div className="ser-black">
                 <div className="ser-header">
-                    <img src='src\images\Line 10.svg' className='head-line ani'/>
+                    <img src={seven} className='head-line ani'/>
                     <div className='hei-ser'>
                         <h1 className="ser-head-white">Why<span style={{color:'rgb(218,145,109)'}}>&nbsp;Us?</span> </h1>
                     </div>
